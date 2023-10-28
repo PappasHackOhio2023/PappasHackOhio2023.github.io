@@ -142,7 +142,7 @@ nav img{
     width:100%;
     background-image: url(images/teambackgroundv4.svg);
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     position: relative;
 }
 .text-box-footer {
