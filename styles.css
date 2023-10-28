@@ -7,7 +7,7 @@
 }
 .header{
     
-    height:100px;
+    min-height: 100vh;
     width:100%;
     background-image: url(images/rainforest.jpg);
     background-position: center;
@@ -139,7 +139,7 @@ nav img{
     width: 690px;
 }
 .footer{
-    min-height: 100vh;
+    height: 100px;
     width:100%;
     background-image: url(images/teambackgroundv4.svg);
     background-position: center;
