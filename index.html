@@ -5,26 +5,30 @@
         <title>Project RecycleSmart</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
     </head>
     <body>
         <section class="header">
             <nav>
-                <div class="nav-links">
+                <a href="index.html"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-arrow-right" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="">VISION</a></li>
-                        <li><a href="">PURPOSE</a></li>
-                        <li><a href="">DESIGN</a></li>
-                        <li><a href="">TEAM</a></li>
+                        <li><a href="#vision">VISION</a></li>
+                        <li><a href="#purpose">PURPOSE</a></li>
+                        <li><a href="#design">DESIGN</a></li>
+                        <li><a href="#team">TEAM</a></li>
                     </ul>
                 </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
             <div class="text-box">
                 <h1>RecycleSmart</h1>
                 <p>Recycling Made Easy</p>
-                <a href="https://ohiostateenergypartners.com/smart-campus-challenge/" class="info-btn" target = "_blank" rel = "noopener noreferrer">Challenge Info</a>
+                <a href="https://ohiostateenergypartners.com/smart-campus-challenge/" class="info-btn" target = "_blank" rel = "noopener noreferrer">CHALLENGE INFO</a>
             </div>
         </section>
-         <section class="vision">
+        <section class="vision" id="vision">
             <div class="leftpage">
                 <header class="visionHeader">VISION</header>
                 <p class="visionBody">RecycleSmart is a convenient self-scanner provided near recycling bins and locations around campus. 
@@ -36,32 +40,38 @@
 
             </div>
         </section>
-        <section class="vision">
+        <section class="vision" id="purpose">
             <div class="rightpage"> 
-
+                <image class = "brutus"src="images/brutus.PNG"></image>
             </div>
             <div class="leftpage">
                 <header class="visionHeader">PURPOSE</header>
                 <p class="visionBody">Our team’s goal is to promote a sustainable campus culture and encourage smart recycling. 
                     According to Waste Management, the average recycling contamination rate, or disposal of trash or recyclables in the wrong recycling bin, is 25%. 
                     Our product aims to reduce this contamination rate to 0% by providing an accessible and convenient solution that empowers students to make environmentally conscious decisions and reduce waste on campus. </p>
+                    <a href="https://si.osu.edu/sites/default/files/OhioStateSustainabilityGoals.pdf" class="visionButton" target = "_blank" rel = "noopener noreferrer"><p class="visionButton">Sustainability Goals at OSU</p></a>
             </div>
         </section>
-        <section class="vision">
+        <section class="vision" id="design">
             <div class="leftpage">
                 <header class="visionHeader">MORE ABOUT DESIGN</header>
-                <p class="visionBody">Since not all items have barcodes, our product provides advice through an interactive screen in addition to the scanner.
-                    Users can learn about what types of materials are accepted at the specific location. 
+                <p class="visionBody">Our design allows a user to scan an item’s barcode to see if it’s recyclable or not. Additionally, since not all items have barcodes, our product provides advice through an interactive screen. Users can learn about what types of materials are accepted at their specific location and how to recycle more effectively. 
                 </p>
             </div>
             <div class="rightpage"> 
-
+                <image class = "productScreen"src="images/product_Screen.PNG"></image>
             </div>
         </section>
-        <section class="footer">
-            <nav>
-                
-            </nav>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0px";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        <section class="footer" id="team">
             <div class="text-box-footer">
                 <h1>MEET OUR TEAM</h1>
                 <p>Alexis Pappas</p>
@@ -72,9 +82,5 @@
                 <a href="https://nixpacse.github.io" class="info-btn" target = "_blank" rel = "noopener noreferrer">Nicholas's Personal Website</a>
             </div>
         </section>
-
-
-
-
     </body>
 </html>
